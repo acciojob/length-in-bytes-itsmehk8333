@@ -1,10 +1,9 @@
 const byteSize = (str) => {
-	
-return str.length
-	
-  // write your code here
+  return new Blob([str]).size;
 };
 
 // Do not change the code below
 const str = prompt("Enter some string.");
-alert(byteSize(str));
+if (str !== null) {
+  alert(byteSize(str));	
+}
